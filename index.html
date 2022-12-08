@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator | Paul's programming circle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="math.js"></script>
+</head>
+<body>
+    <!-- <div id="intro">
+        <h1>Simple calculator version 2</h1>
+        <p>Programming Languages used HTML, CSS & JS</p>
+        <p>Programming is my hobby and passion </p>
+        <p>~ Paul Matanda Ndalila ~</p>
+        <br>
+        <p>The journey --Java--Python--Kotlin--C++--C--MySQL--VB--HTML--CSS--JS--PHP--</p>
+		<p id="start-timer" onload="startT();">Starts in: 10 secs</p>
+            
+    </div> -->
+
+    <div id="calc-container">
+        <h2>Calculator</h2>
+        <input type="text" placeholder="" id="secondary-field" value="" readonly>
+        <input type="text" placeholder="0" id="primary-field" value="" >
+        <div id="btnsRay">
+            <div id="btnsRay1">
+                <button id="seven" onclick="clicked(7);">7</button>
+                <button onclick="clicked(8);">8</button>
+                <button onclick="clicked(9);">9</button>
+                <button id="mult" onmouseenter="showOperation('multiplication');" onclick="clicked('multiply');">x</button>
+            </div>
+    
+            <div id="btnsRay2">
+                <button onclick="clicked(4);">4</button>
+                <button onclick="clicked(5);">5</button>
+                <button onclick="clicked(6);">6</button>
+                <button onmouseenter="showOperation('division');"  onclick="clicked('divide');">/</button>
+            </div>
+    
+            <div id="btnsRay3">
+                <button onclick="clicked(1);">1</button>
+                <button onclick="clicked(2);">2</button>
+                <button onclick="clicked(3);">3</button>
+                <button onmouseenter="showOperation('subtraction');"  onclick="clicked('minus');">-</button>
+            </div>
+    
+            <div id="btnsRay4">
+                <button onclick="clicked('0');">0</button>
+                <button onclick="clicked('dot');">.</button>
+                <button onclick="clicked('C');">C</button>
+                <button  onmouseenter="showOperation('addition');" onclick="clicked('add');">+</button>
+                <button id="equals" onclick="clicked('equals');">=</button>
+                <button id="del" onmouseenter="showOperation('backspace');" onclick="clicked('del');">Del</button>
+            </div>
+        </div>
+        <footer>@Paul's programming circle.</footer>
+        
+        <h4 id="op" onload="getOperation"></h4>
+    </div>
+
+</body>
+</html>

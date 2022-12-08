@@ -1,0 +1,143 @@
+body{
+    background-color: bisque;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calc-container{
+    background-color: black;
+    width: 420px;
+    height: 500px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0 0 20px rgb(71, 71, 71);
+}
+
+h2{
+    padding-left: 10px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+h2::before{
+    content: 'EX8201';
+    display: block;
+    font-size: 10px;
+    color: aliceblue;
+}
+
+h2::after{
+    content: 'v2';
+    font-size: 14px;
+    color: brown;
+}
+
+#primary-field{
+    height: 1cm;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 10px;
+    font-size: 0.8cm;
+}
+
+#secondary-field{
+    height: .5cm;
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+}
+
+#secondary-field, #primary-field{
+    background-color: black;
+    padding-right: 5px;
+    text-align: right;
+	outline: none;
+	border: none;
+    color: #fff;
+    width: 94%;
+    cursor: pointer;
+}
+
+#btnsRay{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+#btnsRay1, #btnsRay2, #btnsRay3, #btnsRay4{
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 8px;
+}
+
+button{
+    padding: 5px 10px;
+    font-size: 22px;
+    height: 1.2cm;
+    width: 23.5%;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(238, 28, 28);
+    color: #fff;
+}
+
+button:nth-child(4){
+    background-color: orange;
+}
+
+button:nth-child(4):hover{
+    background-color: rgb(73, 214, 148);
+    color: rgb(187, 15, 15);
+}
+
+button:nth-child(5):hover{
+    background-color: rgb(192, 104, 104);
+    color: black;
+}
+
+button:nth-child(6):hover{
+    background-color: gray;
+    color: black;
+}
+
+#equals{
+    position: relative;
+    top: 10px;
+    width: 72%;
+    border-radius: 0 0 0 3px;
+    border: none;
+    background-color: rgb(192, 104, 104);
+}
+
+#del{
+    position: relative;
+    background-color: #b8b4be;
+    top: 10px;
+    border-radius: 0 0 3px 0;
+}
+
+footer{
+    padding-top: 20px;
+    letter-spacing: .1cm;
+    color: #b8b4be;
+}
+
+h4{
+    position: absolute;
+    top: 480px;
+    width: 95%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: rgb(43, 42, 42);
+    transition: 1s;
+}
